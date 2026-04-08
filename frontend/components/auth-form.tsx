@@ -164,7 +164,7 @@ export function AuthForm({ mode: initialMode = "login" }: AuthFormProps) {
       </div> */}
 
       <p className="text-center text-[0.7rem] text-on-surface-variant my-4 px-4 leading-relaxed ">
-        By signing up, you agree to our <Link href="/terms" className="font-bold text-primary no-underline hover:underline">Terms</Link> and <Link href="/privacy" className="font-bold text-primary no-underline hover:underline">Privacy Policy</Link>.
+        By signing up, you agree to our <Link href="/terms" prefetch={false} className="font-bold text-primary no-underline hover:underline">Terms</Link> and <Link href="/privacy" prefetch={false} className="font-bold text-primary no-underline hover:underline">Privacy Policy</Link>.
       </p>
     </div>
   );

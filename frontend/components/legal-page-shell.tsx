@@ -36,7 +36,7 @@ export function LegalPageShell({
           <div className="flex items-center justify-between gap-4">
             <BrandLogo compact className="!gap-3" />
             <Button asChild variant="outline" className="rounded-full border-[#dbe3e7] bg-white/80 px-4">
-              <Link href="/login">
+              <Link href="/login" prefetch={false}>
                 <FiArrowLeft className="mr-1" />
                 Back
               </Link>
@@ -117,10 +117,10 @@ export function LegalPageShell({
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Button asChild className="rounded-full px-5">
-                    <Link href="/login">Open Taskly</Link>
+                    <Link href="/login" prefetch={false}>Open Taskly</Link>
                   </Button>
                   <Button asChild variant="outline" className="rounded-full border-white/20 bg-transparent px-5 text-white hover:bg-white/10 hover:text-white">
-                    <Link href="/">Go Home</Link>
+                    <Link href="/" prefetch={false}>Go Home</Link>
                   </Button>
                 </div>
               </div>
