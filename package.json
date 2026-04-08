@@ -1,0 +1,30 @@
+{
+  "name": "taskly",
+  "version": "0.1.0",
+  "description": "A full-stack task management app with JWT auth, personal task CRUD, due dates, filtering, and Redis-backed performance, built with Next.js, Express, MongoDB, and TypeScript.",
+  "private": true,
+  "license": "MIT",
+  "author": "Anubhav Maithil",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "dev:frontend": "npm run dev -w frontend",
+    "dev:backend": "npm run dev -w backend",
+    "start:frontend": "npm run start -w frontend",
+    "start:backend": "npm run start -w backend",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "verify": "npm run test && npm run test:coverage -w backend && npm run lint && npm run build"
+  },
+  "dependencies": {
+    "react-icons": "^5.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

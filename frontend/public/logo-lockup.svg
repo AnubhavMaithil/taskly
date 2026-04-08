@@ -1,0 +1,36 @@
+<svg width="760" height="220" viewBox="0 0 760 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="12" y="18" width="184" height="184" rx="54" fill="url(#bg)"/>
+  <circle cx="165" cy="58" r="32" fill="#2D98DA" opacity="0.24"/>
+  <circle cx="56" cy="176" r="26" fill="#EB3B5A" opacity="0.12"/>
+
+  <g transform="rotate(-9 96 115)">
+    <rect x="54" y="98" width="78" height="58" rx="18" fill="#2D3436" opacity="0.26"/>
+    <rect x="65" y="88" width="80" height="60" rx="18" fill="#2D98DA" opacity="0.96"/>
+  </g>
+
+  <rect x="76" y="52" width="82" height="104" rx="22" fill="#FFFFFF"/>
+  <rect x="76" y="52" width="82" height="104" rx="22" stroke="#DBE3E7" stroke-width="1.5"/>
+  <rect x="89" y="72" width="56" height="8" rx="4" fill="#EDF3F6"/>
+  <rect x="89" y="88" width="42" height="7" rx="3.5" fill="#EDF3F6"/>
+  <rect x="89" y="103" width="50" height="7" rx="3.5" fill="#EDF3F6"/>
+  <rect x="89" y="118" width="38" height="7" rx="3.5" fill="#EDF3F6"/>
+
+  <path d="M95 112L110 127L141 91" stroke="url(#check)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- <path d="M135 130C150.2 126.4 161.8 113.6 165.5 98.5" stroke="#F9F7F2" stroke-width="7" stroke-linecap="round" opacity="0.84"/> -->
+  <path d="M157 74L160.5 81.5L168 85L160.5 88.5L157 96L153.5 88.5L146 85L153.5 81.5L157 74Z" fill="#2D3436"/>
+
+  <text x="236" y="102" fill="#2D3436" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-2.4">Taskly</text>
+  <text x="238" y="138" fill="#2D98DA" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="2.8">TURN TASKS INTO MOMENTUM</text>
+
+  <defs>
+    <linearGradient id="bg" x1="32" y1="28" x2="174" y2="188" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F7F2"/>
+      <stop offset="0.55" stop-color="#2D98DA"/>
+      <stop offset="1" stop-color="#EB3B5A"/>
+    </linearGradient>
+    <linearGradient id="check" x1="98" y1="96" x2="145" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D98DA"/>
+      <stop offset="1" stop-color="#2D3436"/>
+    </linearGradient>
+  </defs>
+</svg>
