@@ -60,8 +60,8 @@ export default function PrivacyPage() {
       title="A readable overview of how Taskly handles data."
       intro="This page explains what information the app uses, why it is processed, and how infrastructure components such as MongoDB, Redis, and authentication tokens fit into the product."
       updatedAt="April 9, 2026"
-      sections={[...sections]}
-      highlights={[...highlights]}
+      sections={sections}
+      highlights={highlights}
     >
       <div className="flex flex-col items-start justify-between gap-4 rounded-[28px] border border-[#dbe3e7] bg-[#f9fbfc] p-6 sm:flex-row sm:items-center">
         <div>

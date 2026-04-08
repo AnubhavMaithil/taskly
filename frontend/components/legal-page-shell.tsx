@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 type LegalSection = {
   heading: string;
-  paragraphs: string[];
+  paragraphs: readonly string[];
 };
 
 type LegalPageShellProps = {
@@ -15,8 +15,8 @@ type LegalPageShellProps = {
   title: string;
   intro: string;
   updatedAt: string;
-  sections: LegalSection[];
-  highlights: string[];
+  sections: readonly LegalSection[];
+  highlights: readonly string[];
   children?: ReactNode;
 };
 

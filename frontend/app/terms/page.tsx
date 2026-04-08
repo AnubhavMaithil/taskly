@@ -60,8 +60,8 @@ export default function TermsPage() {
       title="Clear expectations for using Taskly."
       intro="These terms explain the basic rules for using the app, how account access works, and what responsibilities stay with the user."
       updatedAt="April 9, 2026"
-      sections={[...sections]}
-      highlights={[...highlights]}
+      sections={sections}
+      highlights={highlights}
     >
       <div className="flex flex-col items-start justify-between gap-4 rounded-[28px] border border-[#dbe3e7] bg-[#f9fbfc] p-6 sm:flex-row sm:items-center">
         <div>
