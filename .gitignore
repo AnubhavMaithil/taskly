@@ -2,6 +2,8 @@
 PRODUCT_SPEC.md
 
 
+*.ignore
+
 # Dependencies
 node_modules/
 
@@ -51,6 +53,3 @@ coverage/
 
 # Database
 *.db
-
-# Docker
-.dockerignore

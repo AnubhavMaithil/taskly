@@ -20,7 +20,6 @@ const loginSchema = z.object({
 
 function attachToken(response: Response, token: string) {
   response.cookie("token", token, {
-    httpOnly: true,
     sameSite: "lax",
     secure: env.nodeEnv === "production",
     maxAge: 7 * 24 * 60 * 60 * 1000
