@@ -12,11 +12,9 @@ import { taskRouter } from "./routes/task.routes";
 export function createApp() {
   const app = express();
 
-  const isProd = env.nodeEnv === "production";
-
   app.use(
     cors({
-      origin: isProd ? env.frontendUrl : "http://localhost:3000",
+      origin: true,
       credentials: true
     })
   );
