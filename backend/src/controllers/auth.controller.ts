@@ -19,9 +19,12 @@ const loginSchema = z.object({
 });
 
 function attachToken(response: Response, token: string) {
+  const isProd = env.nodeEnv === "production";
+
   response.cookie("token", token, {
-    sameSite: "lax",
-    secure: env.nodeEnv === "production",
+    httpOnly: true,
+    secure: isProd,
+    sameSite: isProd ? "none" : "lax",
     maxAge: 7 * 24 * 60 * 60 * 1000
   });
 }
@@ -104,10 +107,12 @@ export const login = asyncHandler(async (request, response) => {
 });
 
 export const logout = asyncHandler(async (_request, response) => {
+  const isProd = env.nodeEnv === "production";
+
   response.clearCookie("token", {
     httpOnly: true,
-    sameSite: "lax",
-    secure: env.nodeEnv === "production"
+    secure: isProd,
+    sameSite: isProd ? "none" : "lax"
   });
 
   response.json({ message: "Logged out" });

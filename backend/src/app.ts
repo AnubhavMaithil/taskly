@@ -12,15 +12,13 @@ import { taskRouter } from "./routes/task.routes";
 export function createApp() {
   const app = express();
 
+  const isProd = env.nodeEnv === "production";
+
   app.use(
     cors({
-      origin: true,
+      origin: isProd ? env.frontendUrl : "http://localhost:3000",
       credentials: true
     })
-    // cors({
-    //   origin: env.frontendUrl,
-    //   credentials: true
-    // })
   );
   app.use(helmet());
   app.use(morgan("dev"));
