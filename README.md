@@ -48,7 +48,7 @@ cp frontend/.env.example frontend/.env.local
 
 | Variable | Purpose | Example value |
 | --- | --- | --- |
-| `NEXT_PUBLIC_API_URL` | Browser-visible backend base URL | `http://localhost:5500` |
+| `NEXT_PUBLIC_API_URL` | Backend base URL used by the Next.js API proxy | `http://localhost:5500` |
 
 ## Local Development
 
@@ -142,3 +142,4 @@ See [RUN_AND_DEPLOY.md](/Users/anubhavmaithil/Desktop/Projss/task-tracker/RUN_AN
 - The backend code defaults to port `5500` if `PORT` is not set, and the provided `backend/.env.example` keeps that same local default.
 - The frontend dev server uses the standard Next.js default port `3000`.
 - The frontend API URL should always point to the backend service, not the frontend URL.
+- The browser talks to same-origin Next.js `/api/*` routes, and those routes proxy requests to the backend so auth cookies can be stored on the frontend domain.

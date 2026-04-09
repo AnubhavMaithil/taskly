@@ -1,12 +1,9 @@
-const defaultHost = typeof window !== "undefined" ? window.location.hostname : "localhost";
-const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? `http://${defaultHost}:5500`;
-
 type RequestOptions = RequestInit & {
   bodyJson?: unknown;
 };
 
 export async function apiFetch<T>(path: string, options: RequestOptions = {}) {
-  const response = await fetch(`${apiUrl}${path}`, {
+  const response = await fetch(path, {
     ...options,
     credentials: "include",
     headers: {

@@ -46,7 +46,7 @@ cp frontend/.env.example frontend/.env.local
 
 Variables:
 
-- `NEXT_PUBLIC_API_URL` - browser-visible backend base URL
+- `NEXT_PUBLIC_API_URL` - backend base URL used by the Next.js API proxy
 
 ## Local Development
 
@@ -135,6 +135,8 @@ NEXT_PUBLIC_API_URL=https://your-backend-service.onrender.com
 ```
 
 4. Deploy the project.
+
+The frontend proxies `/api/*` requests to this backend URL, so authentication cookies are issued from the frontend domain instead of relying on a third-party browser cookie.
 
 ## Render Deployment
 
