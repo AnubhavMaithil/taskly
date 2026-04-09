@@ -78,7 +78,7 @@ describe("Tasks Integration", () => {
 
     // Update
     const updateRes = await request(app)
-      .patch(`/api/tasks/${taskId}`)
+      .put(`/api/tasks/${taskId}`)
       .set("Cookie", cookie!)
       .send({ status: "completed" });
 
@@ -108,7 +108,7 @@ describe("Tasks Integration", () => {
 
     // Only update description
     const res1 = await request(app)
-      .patch(`/api/tasks/${taskId}`)
+      .put(`/api/tasks/${taskId}`)
       .set("Cookie", cookie!)
       .send({ description: "Updated Desc" });
     expect(res1.body.task.description).toBe("Updated Desc");
@@ -117,7 +117,7 @@ describe("Tasks Integration", () => {
 
     // Mark as completed
     const res2 = await request(app)
-      .patch(`/api/tasks/${taskId}`)
+      .put(`/api/tasks/${taskId}`)
       .set("Cookie", cookie!)
       .send({ status: "completed" });
     expect(res2.body.task.status).toBe("completed");
@@ -125,7 +125,7 @@ describe("Tasks Integration", () => {
 
     // Mark back to pending
     const res3 = await request(app)
-      .patch(`/api/tasks/${taskId}`)
+      .put(`/api/tasks/${taskId}`)
       .set("Cookie", cookie!)
       .send({ status: "pending" });
     expect(res3.body.task.status).toBe("pending");
@@ -135,7 +135,7 @@ describe("Tasks Integration", () => {
   it("should return 404 when updating non-existent task", async () => {
     const fakeId = new mongoose.Types.ObjectId();
     const res = await request(app)
-      .patch(`/api/tasks/${fakeId}`)
+      .put(`/api/tasks/${fakeId}`)
       .set("Cookie", cookie!)
       .send({ title: "New Title" });
     expect(res.status).toBe(404);
@@ -184,7 +184,7 @@ describe("Tasks Integration", () => {
     const taskId = createRes.body.task._id;
 
     const updateRes = await request(app)
-      .patch(`/api/tasks/${taskId}`)
+      .put(`/api/tasks/${taskId}`)
       .set("Cookie", cookie!)
       .send({ dueDate: "" });
     expect(updateRes.body.task.dueDate).toBeNull();
@@ -208,7 +208,7 @@ describe("Tasks Integration", () => {
 
     // Redundant update
     const updateRes = await request(app)
-      .patch(`/api/tasks/${createRes.body.task._id}`)
+      .put(`/api/tasks/${createRes.body.task._id}`)
       .set("Cookie", cookie!)
       .send({ status: "completed" });
     

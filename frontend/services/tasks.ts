@@ -23,7 +23,7 @@ export const TaskService = {
 
   async updateTask(id: string, payload: UpdateTaskPayload) {
     return apiFetch<{ task: Task }>(`/api/tasks/${id}`, {
-      method: "PATCH",
+      method: "PUT",
       bodyJson: payload,
     });
   },

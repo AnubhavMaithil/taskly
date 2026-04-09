@@ -7,7 +7,7 @@ const taskRouter = Router();
 taskRouter.use(requireAuth);
 taskRouter.get("/", getTasks);
 taskRouter.post("/", createTask);
-taskRouter.patch("/:id", updateTask);
+taskRouter.put("/:id", updateTask);
 taskRouter.delete("/:id", deleteTask);
 
 export { taskRouter };
