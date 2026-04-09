@@ -2,6 +2,8 @@
 
 Taskly is a monorepo task-tracker application with a Next.js frontend and an Express + TypeScript backend backed by MongoDB and Redis.
 
+**Live Project:** [Taskly-Vercel](https://taskly-frontend-mauve.vercel.app/)
+
 ## Repository Layout
 
 - `frontend/` - Next.js application
@@ -34,20 +36,20 @@ cp frontend/.env.example frontend/.env.local
 
 ### Backend Environment Variables
 
-| Variable | Purpose | Example value |
-| --- | --- | --- |
-| `PORT` | Backend HTTP port for local workspace development | `5500` |
-| `MONGODB_URI` | MongoDB connection string | `mongodb://127.0.0.1:27017/task-tracker` |
-| `REDIS_URL` | Redis connection string | `redis://127.0.0.1:6379` |
-| `JWT_SECRET` | Secret used to sign auth tokens | `change-this-before-production` |
-| `JWT_EXPIRES_IN` | JWT lifetime | `7d` |
-| `NODE_ENV` | Runtime environment | `development` |
-| `FRONTEND_URL` | Allowed frontend origin for CORS | `http://localhost:3000` |
+| Variable           | Purpose                                           | Example value                              |
+| ------------------ | ------------------------------------------------- | ------------------------------------------ |
+| `PORT`           | Backend HTTP port for local workspace development | `5500`                                   |
+| `MONGODB_URI`    | MongoDB connection string                         | `mongodb://127.0.0.1:27017/task-tracker` |
+| `REDIS_URL`      | Redis connection string                           | `redis://127.0.0.1:6379`                 |
+| `JWT_SECRET`     | Secret used to sign auth tokens                   | `change-this-before-production`          |
+| `JWT_EXPIRES_IN` | JWT lifetime                                      | `7d`                                     |
+| `NODE_ENV`       | Runtime environment                               | `development`                            |
+| `FRONTEND_URL`   | Allowed frontend origin for CORS                  | `http://localhost:3000`                  |
 
 ### Frontend Environment Variables
 
-| Variable | Purpose | Example value |
-| --- | --- | --- |
+| Variable                | Purpose                                        | Example value             |
+| ----------------------- | ---------------------------------------------- | ------------------------- |
 | `NEXT_PUBLIC_API_URL` | Backend base URL used by the Next.js API proxy | `http://localhost:5500` |
 
 ## Local Development
@@ -134,20 +136,20 @@ Task list updates after create/update/delete actions, and status changes are ref
 
 ### Web
 
-| Screenshot | Screenshot |
-| --- | --- |
-| ![Login Screen](docs/screenshots/web/login-web.png)<br>Login screen | ![Signup Screen](docs/screenshots/web/signup-web.png)<br>Signup screen |
-| ![Dashboard Overview](docs/screenshots/web/dashboard-web.png)<br>Dashboard overview | ![Create Task Modal](docs/screenshots/web/new-task-web.png)<br>Create task modal |
-| ![Task Filtering](docs/screenshots/web/task-filter-completed-web.png)<br>Task filtering (Completed) | ![Pending Filter State](docs/screenshots/web/task-filter-pending-web.png)<br>Pending filter state |
-| ![Completed Task State](docs/screenshots/web/task-complete-web.png)<br>Completed task state | ![Dynamic feedback](docs/screenshots/web/dashboard-toast-web.png)<br>Dynamic feedback after actions |
+| Screenshot                                                                                            | Screenshot                                                                                            |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| ![Login Screen](docs/screenshots/web/login-web.png)`<br>`Login screen                                 | ![Signup Screen](docs/screenshots/web/signup-web.png)`<br>`Signup screen                              |
+| ![Dashboard Overview](docs/screenshots/web/dashboard-web.png)`<br>`Dashboard overview                 | ![Create Task Modal](docs/screenshots/web/new-task-web.png)`<br>`Create task modal                    |
+| ![Task Filtering](docs/screenshots/web/task-filter-completed-web.png)`<br>`Task filtering (Completed) | ![Pending Filter State](docs/screenshots/web/task-filter-pending-web.png)`<br>`Pending filter state   |
+| ![Completed Task State](docs/screenshots/web/task-complete-web.png)`<br>`Completed task state         | ![Dynamic feedback](docs/screenshots/web/dashboard-toast-web.png)`<br>`Dynamic feedback after actions |
 
 ### Mobile
 
-| Screenshot | Screenshot |
-| --- | --- |
-| ![Login Mobile](docs/screenshots/mobile/login-mobile.png)<br>Mobile login flow | ![Signup Mobile](docs/screenshots/mobile/signup-mobile.png)<br>Mobile signup flow |
-| ![Dashboard Mobile](docs/screenshots/mobile/dashboard-mobile.png)<br>Responsive dashboard | ![New Task Mobile](docs/screenshots/mobile/new-task-mobile.png)<br>Task creation on mobile |
-| ![Productivity Screen](docs/screenshots/mobile/productivity-screen-mobile.png)<br>Productivity overview | ![Logout Mobile](docs/screenshots/mobile/logout-mobile.png)<br>Secure logout |
+| Screenshot                                                                                                | Screenshot                                                                                   |
+| --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| ![Login Mobile](docs/screenshots/mobile/login-mobile.png)`<br>`Mobile login flow                          | ![Signup Mobile](docs/screenshots/mobile/signup-mobile.png)`<br>`Mobile signup flow          |
+| ![Dashboard Mobile](docs/screenshots/mobile/dashboard-mobile.png)`<br>`Responsive dashboard               | ![New Task Mobile](docs/screenshots/mobile/new-task-mobile.png)`<br>`Task creation on mobile |
+| ![Productivity Screen](docs/screenshots/mobile/productivity-screen-mobile.png)`<br>`Productivity overview | ![Logout Mobile](docs/screenshots/mobile/logout-mobile.png)`<br>`Secure logout               |
 
 ## Deployment
 
