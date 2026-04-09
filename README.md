@@ -138,18 +138,18 @@ Task list updates after create/update/delete actions, and status changes are ref
 
 | Screenshot                                                                                            | Screenshot                                                                                            |
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| ![Login Screen](docs/screenshots/web/login-web.png)`<br>`Login screen                                 | ![Signup Screen](docs/screenshots/web/signup-web.png)`<br>`Signup screen                              |
-| ![Dashboard Overview](docs/screenshots/web/dashboard-web.png)`<br>`Dashboard overview                 | ![Create Task Modal](docs/screenshots/web/new-task-web.png)`<br>`Create task modal                    |
-| ![Task Filtering](docs/screenshots/web/task-filter-completed-web.png)`<br>`Task filtering (Completed) | ![Pending Filter State](docs/screenshots/web/task-filter-pending-web.png)`<br>`Pending filter state   |
-| ![Completed Task State](docs/screenshots/web/task-complete-web.png)`<br>`Completed task state         | ![Dynamic feedback](docs/screenshots/web/dashboard-toast-web.png)`<br>`Dynamic feedback after actions |
+| ![Login Screen](docs/screenshots/web/login-web.png) Login screen                                 | ![Signup Screen](docs/screenshots/web/signup-web.png) Signup screen                              |
+| ![Dashboard Overview](docs/screenshots/web/dashboard-web.png) Dashboard overview                 | ![Create Task Modal](docs/screenshots/web/new-task-web.png) Create task modal                    |
+| ![Task Filtering](docs/screenshots/web/task-filter-completed-web.png) Task filtering (Completed) | ![Pending Filter State](docs/screenshots/web/task-filter-pending-web.png) Pending filter state   |
+| ![Completed Task State](docs/screenshots/web/task-complete-web.png) Completed task state         | ![Dynamic feedback](docs/screenshots/web/dashboard-toast-web.png) Dynamic feedback after actions |
 
 ### Mobile
 
 | Screenshot                                                                                                | Screenshot                                                                                   |
 | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| ![Login Mobile](docs/screenshots/mobile/login-mobile.png)`<br>`Mobile login flow                          | ![Signup Mobile](docs/screenshots/mobile/signup-mobile.png)`<br>`Mobile signup flow          |
-| ![Dashboard Mobile](docs/screenshots/mobile/dashboard-mobile.png)`<br>`Responsive dashboard               | ![New Task Mobile](docs/screenshots/mobile/new-task-mobile.png)`<br>`Task creation on mobile |
-| ![Productivity Screen](docs/screenshots/mobile/productivity-screen-mobile.png)`<br>`Productivity overview | ![Logout Mobile](docs/screenshots/mobile/logout-mobile.png)`<br>`Secure logout               |
+| ![Login Mobile](docs/screenshots/mobile/login-mobile.png) Mobile login flow                          | ![Signup Mobile](docs/screenshots/mobile/signup-mobile.png) Mobile signup flow          |
+| ![Dashboard Mobile](docs/screenshots/mobile/dashboard-mobile.png) Responsive dashboard               | ![New Task Mobile](docs/screenshots/mobile/new-task-mobile.png) Task creation on mobile |
+| ![Productivity Screen](docs/screenshots/mobile/productivity-screen-mobile.png) Productivity overview | ![Logout Mobile](docs/screenshots/mobile/logout-mobile.png) Secure logout               |
 
 ## Deployment
 
